@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		C79C9AE426266F8300813716 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79C9AE326266F8300813716 /* AppDelegate.swift */; };
 		C79C9AE626266F8300813716 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79C9AE526266F8300813716 /* SceneDelegate.swift */; };
-		C79C9AE826266F8300813716 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79C9AE726266F8300813716 /* ViewController.swift */; };
+		C79C9AE826266F8300813716 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79C9AE726266F8300813716 /* MainViewController.swift */; };
 		C79C9AEB26266F8300813716 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C79C9AE926266F8300813716 /* Main.storyboard */; };
 		C79C9AED26266F8400813716 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C79C9AEC26266F8400813716 /* Assets.xcassets */; };
 		C79C9AF026266F8400813716 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C79C9AEE26266F8400813716 /* LaunchScreen.storyboard */; };
+		C79C9AFF262985F100813716 /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79C9AFE262985F100813716 /* SampleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C79C9AE026266F8300813716 /* HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C79C9AE326266F8300813716 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C79C9AE526266F8300813716 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C79C9AE726266F8300813716 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C79C9AE726266F8300813716 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C79C9AEA26266F8300813716 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C79C9AEC26266F8400813716 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C79C9AEF26266F8400813716 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C79C9AF126266F8400813716 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C79C9AFE262985F100813716 /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				C79C9AE326266F8300813716 /* AppDelegate.swift */,
 				C79C9AE526266F8300813716 /* SceneDelegate.swift */,
-				C79C9AE726266F8300813716 /* ViewController.swift */,
+				C79C9AE726266F8300813716 /* MainViewController.swift */,
+				C79C9AFE262985F100813716 /* SampleViewController.swift */,
 				C79C9AE926266F8300813716 /* Main.storyboard */,
 				C79C9AEC26266F8400813716 /* Assets.xcassets */,
 				C79C9AEE26266F8400813716 /* LaunchScreen.storyboard */,
@@ -137,8 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C79C9AE826266F8300813716 /* ViewController.swift in Sources */,
+				C79C9AE826266F8300813716 /* MainViewController.swift in Sources */,
 				C79C9AE426266F8300813716 /* AppDelegate.swift in Sources */,
+				C79C9AFF262985F100813716 /* SampleViewController.swift in Sources */,
 				C79C9AE626266F8300813716 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
