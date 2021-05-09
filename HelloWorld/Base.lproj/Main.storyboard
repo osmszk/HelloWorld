@@ -1,44 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2lH-pT-agW">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home View Controller-->
+        <!--AutoLayout③-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="AutoLayout③" id="BYZ-38-t0r" customClass="HomeViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, world!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1do-Hf-ZmI">
-                                <rect key="frame" x="128.5" y="430" width="157.5" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QXu-Ng-Mhv">
+                                <rect key="frame" x="35" y="400" width="320" height="44"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="uNz-Xe-Ync"/>
+                                    <constraint firstAttribute="height" constant="44" id="v9W-AX-Fct"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="1do-Hf-ZmI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jdl-s5-qx2"/>
-                            <constraint firstItem="1do-Hf-ZmI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nOs-5S-vHr"/>
+                            <constraint firstItem="QXu-Ng-Mhv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QFd-Nc-NVb"/>
+                            <constraint firstItem="QXu-Ng-Mhv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="glQ-0t-JgQ"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="89"/>
+            <point key="canvasLocation" x="455" y="89"/>
+        </scene>
+        <!--AutoLayout①-->
+        <scene sceneID="VLM-mk-bbl">
+            <objects>
+                <viewController title="AutoLayout①" id="2lH-pT-agW" customClass="HomeViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Ny-K9-bi2">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nZZ-Jc-U5z">
+                                <rect key="frame" x="64" y="164" width="278" height="346"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="J18-ap-Asc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nZZ-Jc-U5z" firstAttribute="top" secondItem="J18-ap-Asc" secondAttribute="top" constant="120" id="CJQ-9H-l1p"/>
+                            <constraint firstItem="nZZ-Jc-U5z" firstAttribute="leading" secondItem="J18-ap-Asc" secondAttribute="leading" constant="64" id="WKu-n9-iyZ"/>
+                            <constraint firstItem="J18-ap-Asc" firstAttribute="trailing" secondItem="nZZ-Jc-U5z" secondAttribute="trailing" constant="48" id="aQY-2V-fTO"/>
+                            <constraint firstItem="J18-ap-Asc" firstAttribute="bottom" secondItem="nZZ-Jc-U5z" secondAttribute="bottom" constant="300" id="sbC-Pz-ihz"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MFf-LE-NP8" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-794" y="89"/>
+        </scene>
+        <!--AutoLayout②-->
+        <scene sceneID="nA3-nS-bPe">
+            <objects>
+                <viewController title="AutoLayout②" id="Ntk-WD-Zft" customClass="HomeViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="roW-hp-r2F">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iBg-zF-aIg">
+                                <rect key="frame" x="48" y="184" width="294" height="44"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="n7P-vd-uVO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1Ip-m0-5iS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1Ip-m0-5iS" firstAttribute="trailing" secondItem="iBg-zF-aIg" secondAttribute="trailing" constant="48" id="4ui-8P-EEb"/>
+                            <constraint firstItem="iBg-zF-aIg" firstAttribute="top" secondItem="1Ip-m0-5iS" secondAttribute="top" constant="140" id="7o6-wz-zE6"/>
+                            <constraint firstItem="iBg-zF-aIg" firstAttribute="leading" secondItem="1Ip-m0-5iS" secondAttribute="leading" constant="48" id="tHb-Sp-kiF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="okE-Bd-iEd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-155" y="89"/>
         </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
