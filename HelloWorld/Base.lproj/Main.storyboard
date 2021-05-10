@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2lH-pT-agW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="s5l-7e-CCH">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -68,6 +68,166 @@
             </objects>
             <point key="canvasLocation" x="-794" y="89"/>
         </scene>
+        <!--AutoLayout④-->
+        <scene sceneID="Mqn-Zd-8bg">
+            <objects>
+                <viewController title="AutoLayout④" id="yxB-na-QAa" customClass="HomeViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vbf-wQ-i1s">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBp-YO-dpa">
+                                <rect key="frame" x="60" y="164" width="270" height="126"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Top Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4C7-cE-ijU">
+                                <rect key="frame" x="124" y="420" width="180" height="50"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5WQ-kj-bUQ"/>
+                                    <constraint firstAttribute="width" constant="180" id="hBD-6f-x0G"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Bottom Button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SfY-Wr-xxX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4C7-cE-ijU" firstAttribute="leading" secondItem="SfY-Wr-xxX" secondAttribute="leading" constant="124" id="CT3-iu-tid"/>
+                            <constraint firstItem="uBp-YO-dpa" firstAttribute="leading" secondItem="SfY-Wr-xxX" secondAttribute="leading" constant="60" id="FkP-Yt-y5M"/>
+                            <constraint firstItem="4C7-cE-ijU" firstAttribute="top" secondItem="uBp-YO-dpa" secondAttribute="bottom" constant="130" id="H6v-5J-dSV"/>
+                            <constraint firstItem="SfY-Wr-xxX" firstAttribute="trailing" secondItem="uBp-YO-dpa" secondAttribute="trailing" constant="60" id="Y8s-FG-Sbe"/>
+                            <constraint firstItem="uBp-YO-dpa" firstAttribute="top" secondItem="SfY-Wr-xxX" secondAttribute="top" constant="120" id="bhC-Um-9cQ"/>
+                            <constraint firstItem="SfY-Wr-xxX" firstAttribute="bottom" secondItem="uBp-YO-dpa" secondAttribute="bottom" constant="520" id="sei-ci-fS8"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wqj-it-uoA" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-795" y="749"/>
+        </scene>
+        <!--AutoLayout⑤-->
+        <scene sceneID="6VP-28-dMW">
+            <objects>
+                <viewController title="AutoLayout⑤" id="rci-LI-bdL" customClass="HomeViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YVM-7c-91l">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOO-l7-7Vp">
+                                <rect key="frame" x="60" y="164" width="270" height="126"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Top Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0X-WC-Pgn">
+                                <rect key="frame" x="60" y="400" width="270" height="126"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Bottom Button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zgB-cZ-tmD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LOO-l7-7Vp" firstAttribute="top" secondItem="zgB-cZ-tmD" secondAttribute="top" constant="120" id="1e5-YY-ba3"/>
+                            <constraint firstItem="zgB-cZ-tmD" firstAttribute="trailing" secondItem="LOO-l7-7Vp" secondAttribute="trailing" constant="60" id="IK2-BF-Imt"/>
+                            <constraint firstItem="LOO-l7-7Vp" firstAttribute="leading" secondItem="zgB-cZ-tmD" secondAttribute="leading" constant="60" id="Pfm-l7-eK1"/>
+                            <constraint firstItem="h0X-WC-Pgn" firstAttribute="height" secondItem="LOO-l7-7Vp" secondAttribute="height" id="Px1-fU-4GY"/>
+                            <constraint firstItem="zgB-cZ-tmD" firstAttribute="bottom" secondItem="LOO-l7-7Vp" secondAttribute="bottom" constant="520" id="V95-B1-vy9"/>
+                            <constraint firstItem="h0X-WC-Pgn" firstAttribute="width" secondItem="LOO-l7-7Vp" secondAttribute="width" id="Ymu-27-hWu"/>
+                            <constraint firstItem="h0X-WC-Pgn" firstAttribute="leading" secondItem="LOO-l7-7Vp" secondAttribute="leading" id="uOJ-jt-Ru2"/>
+                            <constraint firstItem="h0X-WC-Pgn" firstAttribute="top" secondItem="LOO-l7-7Vp" secondAttribute="bottom" constant="110" id="xab-UJ-6eI"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Egm-M6-HV7" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-109" y="749"/>
+        </scene>
+        <!--AutoLayout⑥-->
+        <scene sceneID="PFH-L1-xJq">
+            <objects>
+                <viewController title="AutoLayout⑥" id="s5l-7e-CCH" customClass="HomeViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8sh-Kx-kXW">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAC-XL-iXC">
+                                <rect key="frame" x="60" y="164" width="270" height="126"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Top Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7Z-RR-ong">
+                                <rect key="frame" x="60" y="464" width="270" height="126"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Bottom Button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Na7-hb-W02"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="R7Z-RR-ong" firstAttribute="centerX" secondItem="PAC-XL-iXC" secondAttribute="centerX" id="3Ty-5Z-QVh"/>
+                            <constraint firstItem="PAC-XL-iXC" firstAttribute="leading" secondItem="Na7-hb-W02" secondAttribute="leading" constant="60" id="KnJ-Gg-wrH"/>
+                            <constraint firstItem="PAC-XL-iXC" firstAttribute="top" secondItem="Na7-hb-W02" secondAttribute="top" constant="120" id="Uxl-vS-SLj"/>
+                            <constraint firstItem="R7Z-RR-ong" firstAttribute="height" secondItem="PAC-XL-iXC" secondAttribute="height" id="gq0-yy-hdj"/>
+                            <constraint firstItem="R7Z-RR-ong" firstAttribute="width" secondItem="PAC-XL-iXC" secondAttribute="width" id="jG7-Vy-vN8"/>
+                            <constraint firstItem="R7Z-RR-ong" firstAttribute="centerY" secondItem="PAC-XL-iXC" secondAttribute="centerY" constant="300" id="juj-fw-67O"/>
+                            <constraint firstItem="Na7-hb-W02" firstAttribute="trailing" secondItem="PAC-XL-iXC" secondAttribute="trailing" constant="60" id="p2o-U7-hGL"/>
+                            <constraint firstItem="Na7-hb-W02" firstAttribute="bottom" secondItem="PAC-XL-iXC" secondAttribute="bottom" constant="520" id="xha-yU-HCw"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bJp-mM-mzx" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="531" y="749"/>
+        </scene>
+        <!--AutoLayout⑦-->
+        <scene sceneID="h5Y-YH-BRB">
+            <objects>
+                <viewController title="AutoLayout⑦" id="rhk-7p-c8r" customClass="HomeViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9dI-rv-oDg">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xx8-TA-7cy">
+                                <rect key="frame" x="60" y="164" width="270" height="126"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Top Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mg5-2R-KW3">
+                                <rect key="frame" x="100" y="432" width="190" height="190"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="190" id="ojG-My-LZW"/>
+                                    <constraint firstAttribute="width" secondItem="Mg5-2R-KW3" secondAttribute="height" id="pPk-Aw-eHB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Bottom Button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tNs-He-qkw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Mg5-2R-KW3" firstAttribute="centerX" secondItem="xx8-TA-7cy" secondAttribute="centerX" id="BfI-wF-tiE"/>
+                            <constraint firstItem="tNs-He-qkw" firstAttribute="bottom" secondItem="xx8-TA-7cy" secondAttribute="bottom" constant="520" id="G2q-qG-pjX"/>
+                            <constraint firstItem="xx8-TA-7cy" firstAttribute="top" secondItem="tNs-He-qkw" secondAttribute="top" constant="120" id="Meu-Ku-rhM"/>
+                            <constraint firstItem="tNs-He-qkw" firstAttribute="trailing" secondItem="xx8-TA-7cy" secondAttribute="trailing" constant="60" id="cxm-Lt-RAa"/>
+                            <constraint firstItem="xx8-TA-7cy" firstAttribute="leading" secondItem="tNs-He-qkw" secondAttribute="leading" constant="60" id="dW6-Dg-eCs"/>
+                            <constraint firstItem="Mg5-2R-KW3" firstAttribute="centerY" secondItem="xx8-TA-7cy" secondAttribute="centerY" constant="300" id="wjD-qt-BTV"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8fO-E5-mD1" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1238" y="749"/>
+        </scene>
         <!--AutoLayout②-->
         <scene sceneID="nA3-nS-bPe">
             <objects>
@@ -106,6 +266,9 @@
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
