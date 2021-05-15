@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C754563C264B973200EBF158 /* Greeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C754563B264B973200EBF158 /* Greeting.swift */; };
 		C79C9AE426266F8300813716 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79C9AE326266F8300813716 /* AppDelegate.swift */; };
 		C79C9AE626266F8300813716 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79C9AE526266F8300813716 /* SceneDelegate.swift */; };
 		C79C9AE826266F8300813716 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79C9AE726266F8300813716 /* HomeViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C754563B264B973200EBF158 /* Greeting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Greeting.swift; sourceTree = "<group>"; };
 		C79C9AE026266F8300813716 /* HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C79C9AE326266F8300813716 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C79C9AE526266F8300813716 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				C79C9AE326266F8300813716 /* AppDelegate.swift */,
 				C79C9AE526266F8300813716 /* SceneDelegate.swift */,
 				C79C9AE726266F8300813716 /* HomeViewController.swift */,
+				C754563B264B973200EBF158 /* Greeting.swift */,
 				C79C9AE926266F8300813716 /* Main.storyboard */,
 				C79C9AEC26266F8400813716 /* Assets.xcassets */,
 				C79C9AEE26266F8400813716 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 				C79C9AE826266F8300813716 /* HomeViewController.swift in Sources */,
 				C79C9AE426266F8300813716 /* AppDelegate.swift in Sources */,
 				C79C9AE626266F8300813716 /* SceneDelegate.swift in Sources */,
+				C754563C264B973200EBF158 /* Greeting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
